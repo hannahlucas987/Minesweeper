@@ -27,7 +27,7 @@ public void setMines()
     int c = (int)(Math.random()*NUM_COLS);
     if (!(mines.contains(buttons[r][c]))) {
       mines.add(buttons[r][c]);
-      System.out.println((c+1) + ", " + (r+1));
+      //System.out.println((c+1) + ", " + (r+1));
     }
   }
 }
@@ -75,7 +75,7 @@ public void displayLosingMessage()
       buttons[i][j].flagged=false;
     }
   }
-  System.out.println("YOU LOSE!");
+  //System.out.println("YOU LOSE!");
   buttons[NUM_ROWS/2][NUM_COLS/2-4].setLabel("Y");
   buttons[NUM_ROWS/2][NUM_COLS/2-3].setLabel("O");
   buttons[NUM_ROWS/2][NUM_COLS/2-2].setLabel("U");
@@ -88,7 +88,7 @@ public void displayLosingMessage()
 }
 public void displayWinningMessage()
 {
-  System.out.println("YOU WIN!");
+  //System.out.println("YOU WIN!");
   for(int i=0; i<NUM_ROWS; i++){
     for(int j=0; j<NUM_COLS; j++){
       buttons[i][j].flagged=false;
